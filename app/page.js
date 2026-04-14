@@ -46,7 +46,8 @@ export default function VLSIWebsite() {
               <h3 style={styles.cardTitle}>{p.name}</h3>
               <p style={styles.price}>{p.price}</p>
               <p style={styles.cardText}>{p.desc}</p>
-              <a href="#contact" style={styles.primaryBtn}>Choose Plan</a>
+              <a href="#contact" style={styles.button}>Choose Plan</a>
+
             </div>
           ))}
         </div>
@@ -77,6 +78,8 @@ export default function VLSIWebsite() {
       {/* Footer */}
       <div style={styles.footer}>
         <p>© 2026 VLSI Career Boost. All rights reserved.</p>
+        <p>Created By : Mohit Saxena</p>
+
       </div>
     </div>
   );
@@ -92,9 +95,11 @@ const services = [
 ];
 
 const pricing = [
-  { name: "Starter", price: "₹499", desc: "Basic resume or notes" },
-  { name: "Growth", price: "₹999", desc: "LinkedIn growth + content" },
-  { name: "Pro", price: "₹1999", desc: "Complete career package" },
+
+  { name: "Starter", price: "₹0", desc: "Basic resume or notes" },
+  { name: "Growth", price: "₹0", desc: "LinkedIn growth + content" },
+  { name: "Pro", price: "₹0", desc: "Complete career package" },
+
 ];
 
 const testimonials = [
@@ -109,14 +114,18 @@ const styles = {
   logo: { fontSize: "20px", fontWeight: "bold" },
   navLink: { marginLeft: "20px", color: "#94a3b8", textDecoration: "none" },
   hero: { textAlign: "center", marginBottom: "60px" },
-  heroTitle: { fontSize: "36px", fontWeight: "bold" },
+
+  heroTitle: { fontSize: "36px", fontWeight: "bold", marginBottom: "10px" },
   heroSubtitle: { color: "#94a3b8", marginBottom: "20px" },
   primaryBtn: { padding: "10px 20px", background: "#2563eb", borderRadius: "8px", color: "white", textDecoration: "none" },
+  button: { display: "block", marginTop: "15px", padding: "10px", textAlign: "center", background: "#2563eb", borderRadius: "8px", color: "white", textDecoration: "none" },
+
   section: { marginBottom: "60px" },
   sectionCenter: { marginBottom: "60px", textAlign: "center" },
   sectionTitle: { fontSize: "28px", marginBottom: "20px" },
   grid: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px,1fr))", gap: "20px" },
-  card: { background: "#0f172a", padding: "20px", borderRadius: "10px" },
+  card: { background: "#0f172a", padding: "20px", borderRadius: "10px", display: "flex", flexDirection: "column", justifyContent: "space-between" },
+
   cardTitle: { marginBottom: "10px" },
   cardText: { color: "#94a3b8" },
   price: { fontSize: "24px", marginBottom: "10px" },
