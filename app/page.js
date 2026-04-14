@@ -72,7 +72,9 @@ export default function VLSIWebsite() {
           Grow Your Career with LinkedIn & VLSI Expertise
         </h2>
         <p style={styles.heroSubtitle}>
+
           Resume • LinkedIn Growth • Interview Prep • Projects
+        
         </p>
         <a href="#contact" style={styles.primaryBtn}>Get Started</a>
       </div>
